@@ -1,0 +1,23 @@
+people ={
+	'Alice':{
+		'phone':'12345',
+		'addr':'Foo drive 234'
+	},
+	'emon':{
+		'phone':'3456',
+		 'addr': 'Dhangora,raigong'
+	},
+	'sujon':{
+		'phone':'20003',
+		'addr':'Dhaka'
+	}
+}
+labels = {
+	'phone':'phone Number',
+	'addr' :'address'
+}
+name= raw_input('Please inter your name')
+request = raw_input('phone Number (p) or address (a)?')
+if request == 'p':key ='phone'
+if request == 'a':key = 'addr'
+if name in people:print "%s's %s is %s."%(name,labels[key],people[name][key])
